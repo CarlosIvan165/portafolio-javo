@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="BoxMaster">
+        <!-- Informacion personal a-->
+        <aside class="box1">
+            <div class="box-info-more">
+                <button class="btn-info_more" data-btninfo>
+                    <span class="more-info">Mas Informacion</span>
+                </button>
+            </div>
+            <div class="section-info">
+                <figure class="image-box">
+                    <img class="img1" src="img/avatar-1.png" alt="Imagen de prueba" >
+                    <!-- <img class="img2" src="img/bob.jpg" alt="Segunda Imagen de prueba"> -->
+                </figure>
+                <div class="section-info-name">
+                    <h1 class="name">Javier Perez</h1>
+                    <a class="title">Lic. en Diseño gráfico</a>
+                </div>
+            </div>
+            
+            <div class="section-info_contact inactive" data-boxinfo>
+                <a class="sep"></a>
+                <ul class="contact-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-envelope fa-xl"></i>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a href="" class="contact-link">javier_perezdg@outlook.com</a>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <i class="icon fa-solid fa-mobile-screen-button fa-xl"></i>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Telefono</p>
+                            <a href="" class="contact-link">(+52) 55 4915-4273</a>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-calendar-days fa-xl"></i>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Fecha de nacimiento</p>
+                            <time datetime="1999-11-25">25 Febrero 1990</time>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-location-dot fa-xl"></i>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Direccion</p>
+                            <address>Ecatepec, <br> Estado de Mexico, Mexico</address>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="" class="social-link">
+                            <i class="fa-brands fa-facebook fa-sm"></i>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="" class="social-link">
+                            <i class="fa-brands fa-twitter fa-sm"></i>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="" class="social-link">
+                            <i class="fa-brands fa-instagram fa-sm"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- informacion sobre mi trabajo -->
+        <section class="box2">
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <button class="navbar-link active" data-nav-link>Acerca de mi</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Resumen</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Portafolio</button>
+                    </li>
+                </ul>
+            </nav>
+            <article class="acerca-de active" data-page="acerca de mi">
+                <header class="header">
+                    <h2 class="h2 article-title">
+                        Acerca de Mi
+                    </h2>
+                    <span class="barra"></span>
+                </header>
+
+                <section class="about-text">
+                    <p>Licenciado en Diseño Gráfico, con experiencia en redes sociales, medios impresos, fotografía,
+                        edición de vídeo y la animación 2D Siempre en busca de nuevos conocimientos</p>
+                    <p>Profesional de las artes gráficas con 5 años de experiencia en publicidad impresa, diseño multimedia y desarrollo y manejo de marca</p>
+                </section> 
+
+                <section class="service">
+                    <h3>Que es lo que hago</h3>
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+
+                                <img src="img/icon/digital-advertising.png" alt="">
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="service-item-title">Publicidad Digital</h4>
+                                <p class="service-item-text">
+                                    Levantamiento de video y fotografía para post videos y animaciones de producto
+                                </p>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="img/icon/social-network.png" alt="">
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="service-item-title">Redes sociales</h4>
+                                <p class="service-item-text">
+                                    Creación de campañas promocionales y de temporalidad dirigidas a redes sociales como Facebook, instagram, Pinterest y LinkedIn
+                                </p>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="img/icon/branding.png" alt="">
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="service-item-title">Manejo de Marca y Branding</h4>
+                                <p class="service-item-text">
+                                    Creación  desarrollo y gestión de marca según los lineamientos del brand book
+                                </p>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="img/icon/Photography.png" alt="">
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="service-item-title">Fotografía</h4>
+                                <p class="service-item-text">
+                                    Coordinación de sesiones fotográficas de productos o moda para campañas publicitarias
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>  
+                
+                <section class="clients">
+                    <h3 class="clients-title">Realice trabajos para</h3>
+                    <div class="div-list">
+                        <ul class="clients-list has-scrollbar">
+                            <li class="clients-item">
+                                <a href="#">
+                                    <img src="img/logo-coppel.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="clients-item">
+                                <a href="#">
+                                    <img class="logo-carousel" src="img/logo-tramo.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="clients-item">
+                                <a href="#">
+                                    <img class="logo-tramo" src="img/logo-vargas.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </article>
+
+            <article class="resumen" data-page="resumen">
+                <header class="header">
+                    <h2 class="h2 article-title">
+                        Resumen
+                    </h2>
+                    <span class="barra"></span>
+                </header>
+                
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-book fa-xl"></i>
+                        </div>
+                        <h3>Educacion</h3>
+                    </div>
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="timeline-item-title">Domestika</h4>
+                            <span>2023</span>
+                            <p class="timeline-text">Diseño de infografías para periódicos y revistas</p>
+                            <p class="timeline-text">Creación de mock-ups para branding</p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="timeline-item-title">Crehana</h4>
+                            <span>2021</span>
+                            <p class="timeline-text">Curso de Direción de arte y composición</p>
+                            <p class="timeline-text">Especialización en diseño publicitario</p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="timeline-item-title">Teniux</h4>
+                            <span>2017</span>
+                            <p class="timeline-text">Curso de Community Manager</p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="timeline-item-title">Crehana</h4>
+                            <span>2017</span>
+                            <p class="timeline-text">Certificación en Adobe Illustrator CC 2017</p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="timeline-item-title">Centro universitario internacional de méxico</h4>
+                            <span>2010 - 2014</span>
+                            <p class="timeline-text">Licenciatura en Diseño gráfico - Título y Cédula Profesional</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-book fa-xl"></i>
+                        </div>
+                        <h3>Experiencia</h3>
+                    </div>
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="timeline-item-title">How2 - Director de arte Jr.</h4>
+                            <span>Julio de 2022- Enero de 2024</span>
+                            <p class="timeline-text">
+                                
+                                Como director de arte junior, <strong>me encargo del diseño, gestión y monitoreo de campañas promocionales y temporales 100% digitales.</strong> 
+                                También apoyo en la coordinación y <strong>organización de sesiones de fotos y grabaciones de video para marcas como Tramontina, Ruz y Telcel</strong>, 
+                                y en el diseño de presentaciones corporativas.
+                                
+                                <!-- Como director de arte jr estoy a cargo del <strong>Diseño de campañas
+                                promocionales y de temporalidad 100% digitales</strong> así como de la
+                                gestión y monitoreo de las mismas. También actúo como soporte en la
+                                coordinación y organización para <strong>shooting y levantamiento de video
+                                para marcas como Tramontina, Ruz y Telcel</strong> así como el diseño de
+                                presentaciones corporativas.-->
+                            </p> 
+                            <div class="experiencia-box">
+                                <p>Elaboro propuestas de <strong>mastergraphics</strong> de acuerdo a la temporalidad y el brief previamente recibido por
+                                    <strong>Tramontina México y Tramontina Brasil</strong>, así como la adaptación para diferentes formatos para web, mailing y
+                                    redes sociales como Facebook, Instagram y Pinterest.</p>
+                                <div class="experiencia-box-img">
+                                    <img class="logo-tramo" src="img/logo-tramo.svg" alt="">
+                                </div>
+                                <p>Diseño de comunicación corporativa para Coppel en linkedin y sus diferentes
+                                    sub marcas como <strong>Ban Coppel, Afore Coppel, Coppel marketplace y Coppel Pay.</strong></p>
+                                <div class="experiencia-box-img">
+                                    <img class="logo-tramo" src="img/logo-coppel.svg" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="timeline-item-title">Abarrotes Casa Vargas - Lider de diseño e imagen</h4>
+                            <span>2020-2022</span>
+                            <p class="timeline-text">Manejo y desarrollo de marca: Abarrotes Casa Vargas, casa de la
+                                mascota (Pet shop) y Pharmahogar.</p>
+                            <p class="timeline-text">Diseño de campañas promocionales para más de 40 puntos de
+                                venta y campañas digitales con inversiones de entre $150,000 y
+                                $200,000 pesos para marcas como Herdez, Pedigree, Colgate,
+                                Nestlé, Kimbely-Clark etc.</p>
+                            <div class="experiencia-box">
+                                <p>Diseño materiales impresos y digitales alineados a las campañas del Mes y Quincena del proveedor
+                                    previamente negociadas.</p>
+                                <!-- <img class="logo-tramo" src="img/logo-tramo.svg" alt=""> -->
+                                <p>Trato con proveedores para la negociación de presupuestos, tiempos de entrega e impresión
+                                    del material solicitado.</p>
+                                <!-- <img class="logo-tramo" src="img/logo-coppel.svg" alt=""> -->
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="timeline-item-title">Grupo Valle de México - Diseñador gráfico “B”</h4>
+                            <span>2017-2019</span>
+                            <p class="timeline-text">Manejo de marca, creación de material publicitario para punto
+                                de venta y medios digitales, participación en sesiones fotográficas
+                                y de video para tiendas de moda y restaurantes.</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="skill">
+                    <h3>Mis Habilidades</h3>
+                    <ul class="skills-list content-card">
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="skill-name">Illustrator</h5>
+                                <data value="90">90%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 80%;"></div>
+                            </div>
+                        </li>
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="skill-name">Photoshop</h5>
+                                <data value="70">70%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 70%;"></div>
+                            </div>
+                        </li>
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="skill-name">After Effects</h5>
+                                <data value="70">70%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 70%;"></div>
+                            </div>
+                        </li>
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="skill-name">Premier</h5>
+                                <data value="50">50%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 50%;"></div>
+                            </div>
+                        </li>
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="skill-name">InDesing</h5>
+                                <data value="30">30%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 30%;"></div>
+                            </div>
+                        </li>
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="skill-name">Mailchimp</h5>
+                                <data value="30">30%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 30%;"></div>
+                            </div>
+                        </li>
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="skill-name">Wordpress</h5>
+                                <data value="30">30%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 30%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+
+            <article class="portafolio" data-page="portafolio">
+                <header class="header">
+                    <h2 class="h2 article-title">Portafolio</h2>
+                    <span class="barra"></span>
+                </header>
+                <section class="projects">
+                    <ul class="filter-list">
+                        <li class="filter-item">
+                            <button class="active" data-filter-btn>All</button>
+                        </li>
+                        <li class="filter-item">
+                            <button data-filter-btn>Casa Vargas</button>
+                        </li>
+                        <li class="filter-item">
+                            <button data-filter-btn>HOW2</button>
+                        </li>
+                        <li class="filter-item">
+                            <button data-filter-btn>Practimart </button>
+                        </li>
+                    </ul>
+
+                    <div class="filter-select-box">
+
+                        <button class="filter-select" data-select>
+            
+                          <div class="select-value" data-select-value>Selecciona la categoria</div>
+            
+                          <div class="select-icon">
+                            <ion-icon name="chevron-down"></ion-icon>
+                          </div>
+            
+                        </button>
+            
+                        <ul class="select-list">
+            
+                          <li class="select-item">
+                            <button data-select-item>All</button>
+                          </li>
+            
+                          <li class="select-item">
+                            <button data-select-item>Casa Vargas</button>
+                          </li>
+            
+                          <li class="select-item">
+                            <button data-select-item>HOW2</button>
+                          </li>
+            
+                          <li class="select-item">
+                            <button data-select-item>Practimart</button>
+                          </li>
+            
+                        </ul>
+            
+                    </div>
+
+                    <ul class="project-list galeria-imagenes"></ul>
+                </section>
+            </article>
+            
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
