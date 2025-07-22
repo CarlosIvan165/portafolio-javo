@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mi Portafolio</title>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/style.css">
         <style>
             .font-josefin {
                 font-family: 'Josefin Sans', sans-serif;
@@ -12,95 +13,231 @@
             }
         </style>
     </head>
-    <body class="font-josefin bg-[#7e9c94]">
-        <header class="grid justify-center bg-[#F18585]">
-            <!-- <div class="flex flex-row-reverse mr-5">
-                <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-                    <span class="sr-only">Abrir Menu</span>
+    <body class="font-josefin bg-[#7e9c94] text-white text-center">
+        <header class="bg-[#F18585]">
+            <div class="hidden md:flex grid justify-center">
+                <div class="flex text-lg gap-3 font-bold">
+                    <button class="hover:bg-[#f06d6d] p-2 text-xl" data-nav-link>Sobre mí</button>
+                    <button class="hover:bg-[#f06d6d] p-2 text-xl" data-nav-link>Videos y Animaciones</button>
+                    <button class="hover:bg-[#f06d6d] p-2 text-xl" data-nav-link>Imágenes Publicitarias</button>
+                    <button class="hover:bg-[#f06d6d] p-2 text-xl" data-nav-link>Practimart</button>
+                </div>
+            </div>
+
+            <div class="flex flex-row-reverse lg:hidden">
+                <button id="menu-toggle" type="button" class=" p-3">
+                    <span class="sr-only">Open main menu</span>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-9">
                         <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </button>
-            </div> -->
-            <div class="flex text-lg gap-3 text-white font-bold">
-                <a class="hover:bg-[#f06d6d] p-2" href="#sobre-mi">Sobre mi</a>
-                <a class="hover:bg-[#f06d6d] p-2" href="#experiencia">Mi experiencia</a>
-                <a class="hover:bg-[#f06d6d] p-2" href="#videos">Videos y Animaciones</a>
-                <a class="hover:bg-[#f06d6d] p-2" href="#img-publicitarias">Imágenes Publicitarias</a>
-                <a class="hover:bg-[#f06d6d] p-2" href="#practimart">Practimart</a>
             </div>
+            <div id="mobile-menu" class="hidden md:hidden flex flex-col items-center gap-2 px-4 pb-4 bg-[#F18585] font-bold text-lg">
+                <button class="hover:bg-[#f06d6d] px-3 py-2 w-full rounded text-xl" data-nav-link>Sobre mí</button>
+                <button class="hover:bg-[#f06d6d] px-3 py-2 w-full rounded text-xl" data-nav-link>Videos y Animaciones</button>
+                <button class="hover:bg-[#f06d6d] px-3 py-2 w-full rounded text-xl" data-nav-link>Imágenes Publicitarias</button>
+                <button class="hover:bg-[#f06d6d] px-3 py-2 w-full rounded text-xl" data-nav-link>Practimart</button>
+            </div>            
         </header>
-        <section id="Sobre-mi" class="grid">
-            <div class="flex">
-                <div class="flex flex-col">
-                    <p>a</p>
-                </div>
-                <div class="w-1/2 flex justify-end">
-                    <img class="w-md" src="./assets/img/Javier_foto_2021.png" alt="">
-                </div>
-                <div class="flex text-white text-center w-1/2">
-                    <div class="py-30">
-                        <h1 class="text-8xl">Juan Javier</h1>
-                        <h1 class="text-8xl">Pérez</h1>
-                        <h2 class="text-4xl">Diseñador Gráfico</h2>
 
-                        <p class="text-2xl text-center mt-10">Apasionado del diseño, la ilustración,</p>
-                        <p class="text-2xl text-center">y las historias de terror</p>
+        <article class="mt-8" data-page="sobre mí">
+            <div class="grid">
+                <div class="flex">
+                    <div class="md:w-1/2 md:flex justify-end hidden">
+                        <img class="w-md" src="./assets/img/Javier_foto_2021.png" alt="">
+                    </div>
+                    <div class="flex text-center md:w-1/2">
+                        <div class="py-15 md:py-30">
+                            <h1 class="text-8xl animate-bounce">Juan Javier</h1>
+                            <h1 class="text-8xl animate-bounce">Pérez</h1>
+                            <h2 class="text-4xl">Diseñador Gráfico</h2>
+
+                            <p class="text-2xl text-center mt-10">Apasionado del diseño, la ilustración,</p>
+                            <p class="text-2xl text-center">y las historias de terror</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="grid justify-center text-white my-6 mt-10">
-                <div class="bg-[#F18585] text-center p-1 rounded-lg w-[150px]">
-                    <p class="text-xl">Informacion:</p>
-                </div>
-            </div>
-            <div class="grid justify-center text-white">
-                <div class="grid grid-cols-2 m-9 text-xl items-center">
-                    <div class="px-8 w-2xl">
-                        <p class="mb-5">Con más de 8 años de experiencia en diversos sectores empresariales, he desarrollado habilidades sólidas en publicidad impresa y digital. 
-                            Ya sea colaborando con empresas u organizaciones, mi enfoque ha sido siempre fortalecer los valores de marca, optimizar su imagen y generar 
-                            una diferenciación estratégica en el mercado.
-                        </p>
-                        
-                        <p>Ser diseñador me ha llevado a trabajar con marcas como Coopel, Tramontina México, Nestlé, Lala entre otras, principalmente en la creación de campañas
-                         promocionales para medios digitales como Facebook e Instagram, así como medios impresos,</p>
+                <div class="grid justify-center my-6 md:mt-10">
+                    <div class="bg-[#F18585] text-center p-1 rounded-lg w-[150px]">
+                        <p class="text-xl">Informacion:</p>
                     </div>
-                    <div class="px-8 w-2xl text-center text-2xl shadow-xl bg-[#85A69D] p-8">
-                        <h1 class="text-4xl">Mis Areas De experiencia</h1>
-                        <div class="grid place-items-center">
-                            <div class="grid grid-cols-3 gap-8 m-5">
-                                <p class="w-[190px] text-xl p-2">Publicidad digital</p>
-                                <p class="w-[190px] text-xl p-2">Manejo de marca</p>
-                                <p class="w-[190px] text-xl p-2">Redes sociales</p>
+                </div>
+                <div class="grid justify-center">
+                    <div class="grid grid-cols-1 md:grid-cols-2 md:m-9 text-xl items-center">
+                        <div class="px-8 w-sm md:w-2xl">
+                            <p class="mb-5">Con más de 8 años de experiencia en diversos sectores empresariales, he desarrollado habilidades sólidas en publicidad impresa y digital. 
+                                Ya sea colaborando con empresas u organizaciones, mi enfoque ha sido siempre fortalecer los valores de marca, optimizar su imagen y generar 
+                                una diferenciación estratégica en el mercado.
+                            </p>
+                            
+                            <p>Ser diseñador me ha llevado a trabajar con marcas como Coopel, Tramontina México, Nestlé, Lala entre otras, principalmente en la creación de campañas
+                            promocionales para medios digitales como Facebook e Instagram, así como medios impresos,</p>
+                        </div>
+                        <div class="px-8 w-sm md:w-2xl text-center text-2xl shadow-xl bg-[#85A69D] p-8">
+                            <h1 class="text-4xl">Mis Areas De experiencia</h1>
+                            <div class="hidden md:grid place-items-center">
+                                <div class="grid grid-cols-2 md:grid-cols-3 gap-8 m-5">
+                                    <p class="w-[110px] md:w-[190px] text-xl p-2 bg-[#F18585] rounded-lg">Publicidad digital</p>
+                                    <p class="w-[110px] md:w-[190px] text-xl p-2 bg-[#F18585] rounded-lg">Manejo de marca</p>
+                                    <p class="w-[110px] md:w-[190px] text-xl p-2 bg-[#F18585] rounded-lg">Redes sociales</p>
+                                </div>
+                                <div class="grid grid-cols-2 gap-8 m-5">
+                                    <p class="text-xl p-2 bg-[#F18585] rounded-lg">Fotografía</p>
+                                    <p class="text-xl p-2 bg-[#F18585] rounded-lg">Branding</p>
+                                </div>
                             </div>
-                            <div class="grid grid-cols-2 gap-8 m-5">
-                                <p class="text-xl shadow p-2">Fotografía</p>
-                                <p class="text-xl shadow p-2">Branding</p>
-                            </div>
-                        </div>                        
-                    </div>
-                </div>            
+                            <div class="md:hidden grid place-items-center">
+                                <div class="grid grid-cols-2 md:grid-cols-3 gap-8 m-5">
+                                    <p class="w-[110px] md:w-[190px] text-xl p-2 bg-[#F18585] rounded-lg">Publicidad digital</p>
+                                    <p class="w-[110px] md:w-[190px] text-xl p-2 bg-[#F18585] rounded-lg">Manejo de marca</p>
+                                    <p class="w-[110px] md:w-[190px] text-xl p-2 bg-[#F18585] rounded-lg">Redes sociales</p>
+                                    <p class="text-xl p-2 bg-[#F18585] rounded-lg">Fotografía</p>
+                                    <p class="text-xl p-2 bg-[#F18585] rounded-lg">Branding</p>
+                                </div>                                    
+                            </div>                      
+                        </div>
+                    </div>            
+                </div>
             </div>
-        </section>
-        <section >
+        </article>
 
-        </section>
+        <article class="mt-8" data-page="videos y animaciones">
+            <div class="pt-10">
+                <div class="grid justify-center">
+                    <h1 class="text-3xl">Creación de videos promocionales</h1>
+                    <h1 class="text-3xl">y Motion graphic</h1>
+                    <div class="border-[#F18585] w-20 border w-full my-8"></div>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-3 md:gap-5 md:px-18 grid-cols-2 gap-1 px-3 mb-5">
+                <video controls autoplay muted loop>
+                    <source src="./assets/img/casa vargas/video/Elotes.mp4" type="video/mp4">
+                </video>
+                <video controls autoplay muted loop>
+                    <source src="./assets/img/casa vargas/video/Embasa.mp4" type="video/mp4">
+                </video>
+                <video controls autoplay muted loop>
+                    <source src="./assets/img/casa vargas/video/HIstoria_salsa_1.mp4" type="video/mp4">
+                </video>
+                
+                <video controls autoplay muted loop>
+                    <source src="./assets/img/casa vargas/video/VID-20210121-WA0012.mp4" type="video/mp4">
+                </video>
 
-        <section id="experiencia">
+                <div>
+                    <video controls autoplay muted loop>
+                        <source src="./assets/img/casa vargas/video/VID-20210701-WA0025.mp4" type="video/mp4">
+                    </video>
+                    <video controls autoplay muted loop class="mt-10">
+                        <source src="./assets/img/casa vargas/video/Portada_video_Herdez.mp4" type="video/mp4">
+                    </video>
+                </div>
+                
+                <video controls autoplay muted loop>
+                    <source src="./assets/img/casa vargas/video/Video_ kleenex.mp4" type="video/mp4">
+                </video>
 
-        </section>
+                
+            </div>
+        </article>
         
-        <section id="videos">
+        <article class="mt-8" data-page="imágenes publicitarias" class="text-center">
+            <div>
+                <a href="#menu"></a>
+            </div>
+            <div class="pt-10">
+                <h1 class="text-3xl">Creación de imágenes publicitarias para</h1>
+                <h1 class="text-3xl">redes sociales</h1>
 
-        </section>
+                <div class="py-5" id="menu">
+                    <a href="#vargas" class="bg-[#F18585] text-center p-3 rounded-lg w-[150px]">Casa Vargas</a>
+                    <a href="#how2" class="bg-[#F18585] text-center p-3 rounded-lg w-[150px]">How2</a>
+                </div>
+                <div id="vargas"></div>
+                <div class="grid justify-center my-6">
+                    <div class="border-[#F18585] border w-full mb-5"></div>
+                    <div class="bg-[#F18585] text-center p-1 rounded-lg w-[200px]">
+                        <p class="text-2xl">Casa Vargas</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 md:gap-5 md:px-18 grid-cols-2 gap-1 px-3">
+                <img class="shadow-xl/30" src="./assets/img/casa vargas/1.png" alt="">
+                <img class="shadow-xl/30" src="./assets/img/casa vargas/2.png" alt="">
+                <img class="shadow-xl/30" src="./assets/img/casa vargas/4.png" alt="">
+
+                <img class="shadow-xl/30" src="./assets/img/casa vargas/5.png" alt="">
+                <img class="shadow-xl/30" src="./assets/img/casa vargas/7.png" alt="">
+                <img class="shadow-xl/30" src="./assets/img/casa vargas/9.png" alt="">
+
+                <img class="shadow-xl/30" src="./assets/img/casa vargas/6.png" alt="">
+                <img class="shadow-xl/30" src="./assets/img/casa vargas/10.png" alt="">                
+                <img class="shadow-xl/30" src="./assets/img/casa vargas/8.png" alt="">
+                
+                <img class="shadow-xl/30" src="./assets/img/casa vargas/3.png" alt="">
+            </div>
+
+            <div id="how2"></div>
+            <div class="mt-5">
+                <div class="grid justify-center my-6">
+                    <div class="border-[#F18585] border w-full mb-5"></div>
+                    <div class="bg-[#F18585] text-center p-1 rounded-lg w-[200px]">
+                        <p class="text-2xl">How2</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="grid md:grid-cols-3 md:gap-5 md:px-18 grid-cols-2 gap-1 px-3">
+                <img class="shadow-xl/30" src="./assets/img/how2/1.png" alt="">
+                <img class="shadow-xl/30" src="./assets/img/how2/8.png" alt="">
+                <img class="shadow-xl/30" src="./assets/img/how2/7.png" alt="">
+
+                <img class="shadow-xl/30" src="./assets/img/how2/4.png" alt="">
+                <img class="shadow-xl/30" src="./assets/img/how2/5.png" alt="">
+                <img class="shadow-xl/30" src="./assets/img/how2/6.png" alt="">
+
+                <img class="shadow-xl/30" src="./assets/img/how2/3.png" alt="">
+                <img class="shadow-xl/30" src="./assets/img/how2/2.png" alt="">                
+                <img class="shadow-xl/30" src="./assets/img/how2/9.png" alt="">
+            </div>
+        </article>
         
-        <section id="img-publicitarias">
+        <article class="active mt-8" data-page="practimart">
+            <div class="py-10 grid justify-center">
+                <h1 class="text-4xl">Practimart</h1>
+                <div class="border-[#F18585] border w-full my-5"></div>
+                <p class="text-2xl w-sm md:w-3xl">
+                    Practimart es una empresa mexicana que tiene como principal objetivo satisfacer 
+                    las necesidades de construcción de nuestros clientes mediante de la comercialización 
+                    de productos para plomería, material eléctrico, herramientas, cerrajería, y mucho más.. 
+                </p>
+            </div>
 
-        </section>
+            <div class="grid md:grid-cols-3 md:gap-5 md:px-18 grid-cols-2 gap-1 px-3">
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <img src="./assets/img/practimart/1.png" alt="">
+                        <img src="./assets/img/practimart/5.png" alt="">
+                    </div>
+                    <img src="./assets/img/practimart/4.png" alt="">
+                </div>
+                
+                <img src="./assets/img/practimart/2.png" alt="">
+                
+                
+                <img src="./assets/img/practimart/6.png" alt="">
+                <img src="./assets/img/practimart/7.png" alt="">
+                <img src="./assets/img/practimart/8.png" alt="">
+                
+                <img src="./assets/img/practimart/3.png" alt="">
+                
+            </div>
+        </article>
 
-        <section id="practimart">
-
-        </section>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/scripts.js"></script>
 </html>
