@@ -23,3 +23,11 @@ const toggleBtn = document.getElementById('menu-toggle');
   toggleBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
   });
+
+function copiarAlPortapapeles(texto) {
+  navigator.clipboard.writeText(texto).then(function() {
+    alert('Copiado en el portapapeles: ' + texto);
+  }, function(err) {
+    alert('Error al copiar: ' + err);
+  });
+}

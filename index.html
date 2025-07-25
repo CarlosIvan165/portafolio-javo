@@ -6,6 +6,7 @@
         <title>Mi Portafolio</title>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <style>
             .font-josefin {
                 font-family: 'Josefin Sans', sans-serif;
@@ -24,7 +25,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-row-reverse lg:hidden">
+            <div class="flex flex-row-reverse md:hidden">
                 <button id="menu-toggle" type="button" class=" p-3">
                     <span class="sr-only">Open main menu</span>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-9">
@@ -40,14 +41,14 @@
             </div>            
         </header>
 
-        <article class="active mt-8" data-page="sobre mí">
+        <article class="active my-8" data-page="sobre mí">
             <div class="grid">
-                <div class="flex">
+                <div class="flex my-8">
                     <div class="md:w-1/2 md:flex justify-end hidden">
-                        <img class="w-md" src="./assets/img/Javier_foto_2021.png" alt="">
+                        <img class="w-md" src="./assets/img/Javier_fotoa_2021.png" alt="">
                     </div>
                     <div class="flex text-center md:w-1/2">
-                        <div class="py-15 md:py-30">
+                        <div class="py-5 md:py-30">
                             <h1 class="text-8xl animate-bounce">Juan Javier</h1>
                             <h1 class="text-8xl animate-bounce">Pérez</h1>
                             <h2 class="text-4xl">Diseñador Gráfico</h2>
@@ -57,7 +58,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid justify-center my-6 md:mt-10">
+                <div class="grid justify-center my-6 md:mt-5">
                     <div class="bg-[#F18585] text-center p-1 rounded-lg w-[150px]">
                         <p class="text-xl">Informacion:</p>
                     </div>
@@ -73,7 +74,7 @@
                             <p>Ser diseñador me ha llevado a trabajar con marcas como Coopel, Tramontina México, Nestlé, Lala entre otras, principalmente en la creación de campañas
                             promocionales para medios digitales como Facebook e Instagram, así como medios impresos,</p>
                         </div>
-                        <div class="w-sm md:w-2xl text-center text-2xl shadow-xl bg-[#85A69D] p-4 mt-2">
+                        <div class="w-sm md:w-2xl text-center text-2xl shadow-xl bg-[#85A69D] p-4 mt-2 rounded-xl">
                             <h1 class="text-4xl">Mis Areas De experiencia</h1>
                             <div class="grid grid-cols-1 place-items-center">
                                 <div class="grid grid-cols-2 md:grid-cols-3 gap-8 m-5">
@@ -92,7 +93,7 @@
             </div>
         </article>
 
-        <article class="mt-8" data-page="videos y animaciones">
+        <article class="my-8" data-page="videos y animaciones">
             <div class="pt-10">
                 <div class="grid justify-center">
                     <h1 class="text-3xl">Creación de videos promocionales</h1>
@@ -101,30 +102,30 @@
                 </div>
             </div>
             <div class="grid md:grid-cols-3 md:gap-5 md:px-18 grid-cols-2 gap-1 px-3 mb-5">
-                <video controls autoplay muted loop>
+                <video controls muted loop>
                     <source src="./assets/img/casa vargas/video/Elotes.mp4" type="video/mp4">
                 </video>
-                <video controls autoplay muted loop>
+                <video controls muted loop>
                     <source src="./assets/img/casa vargas/video/Embasa.mp4" type="video/mp4">
                 </video>
-                <video controls autoplay muted loop>
+                <video controls muted loop>
                     <source src="./assets/img/casa vargas/video/HIstoria_salsa_1.mp4" type="video/mp4">
                 </video>
                 
-                <video controls autoplay muted loop>
+                <video controls muted loop>
                     <source src="./assets/img/casa vargas/video/VID-20210121-WA0012.mp4" type="video/mp4">
                 </video>
 
                 <div>
-                    <video controls autoplay muted loop>
+                    <video controls muted loop>
                         <source src="./assets/img/casa vargas/video/VID-20210701-WA0025.mp4" type="video/mp4">
                     </video>
-                    <video controls autoplay muted loop class="mt-10">
+                    <video controls muted loop class="mt-10">
                         <source src="./assets/img/casa vargas/video/Portada_video_Herdez.mp4" type="video/mp4">
                     </video>
                 </div>
                 
-                <video controls autoplay muted loop>
+                <video controls muted loop>
                     <source src="./assets/img/casa vargas/video/Video_ kleenex.mp4" type="video/mp4">
                 </video>
 
@@ -132,7 +133,7 @@
             </div>
         </article>
         
-        <article class="mt-8" data-page="imágenes publicitarias" class="text-center">
+        <article class="my-8" data-page="imágenes publicitarias" class="text-center">
             <div>
                 <a href="#menu"></a>
             </div>
@@ -195,7 +196,7 @@
             </div>
         </article>
         
-        <article class="mt-8" data-page="practimart">
+        <article class="my-8" data-page="practimart">
             <div class="py-10 grid justify-center">
                 <h1 class="text-4xl">Practimart</h1>
                 <div class="border-[#F18585] border w-full my-5"></div>
@@ -227,6 +228,22 @@
             </div>
         </article>
 
+        <footer class="grid md:flex bg-[#F18585] justify-center gap-5 p-7">
+            <div>
+                <p>Correo: <a href="#" onclick="copiarAlPortapapeles('javier_perezdg@outlook.com'); return false;">javier_perezdg@outlook.com</a> </p>
+            </div>
+            
+            <p>Celular: <a href="#" onclick="copiarAlPortapapeles('5549154273'); return false;">55 4915 4273</a> </p>
+
+            <div class="flex gap-5 justify-center">
+                <a href="https://www.instagram.com/eljavo_pe/?utm_source=qr&igsh=a2R4MDhoNjExOWdh#">
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-linkedin fa-2xl"></i>
+                </a>
+            </div>
+        </footer>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.tailwindcss.com"></script>
